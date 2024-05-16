@@ -11,7 +11,7 @@ TagManager:
   - Enemy_Shield
   - Follow
   - Floor
-  - Slip
+  - up
   layers:
   - Default
   - TransparentFX

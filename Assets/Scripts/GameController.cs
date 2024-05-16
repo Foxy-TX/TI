@@ -35,11 +35,6 @@ public class GameController : MonoBehaviour
         InvokeRepeating(nameof(spawnCoins), 2f, 1f);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     void spawnEnemies()
     {

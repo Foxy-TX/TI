@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     private bool change = false;
     private int bate_count = 0;
 
+
     public static PlayerController instance;
     
     void Start()
@@ -37,7 +38,6 @@ public class PlayerController : MonoBehaviour
             transform.Translate(dire * Time.deltaTime * speed);
         }
 
-
         if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
@@ -57,7 +57,7 @@ public class PlayerController : MonoBehaviour
                 }
 
             }
-
+            
            
         } else if (Input.touchCount > 3){
             

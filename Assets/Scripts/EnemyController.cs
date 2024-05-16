@@ -38,11 +38,11 @@ public class EnemyController : MonoBehaviour
             _canshoot = true;
         }
         //Fazer o enimigo perseguir o player
-        Vector3 direction = alvo.position - transform.position;
+        //Vector3 direction = alvo.position - transform.position;
 
-        direction.Normalize();
+        //direction.Normalize();
 
-        transform.Translate(direction * speed * Time.deltaTime, Space.World);
+        //transform.Translate(direction * speed * Time.deltaTime, Space.World);
         //Atirar
         ShootControl(turret.position, turret.rotation);
     }
