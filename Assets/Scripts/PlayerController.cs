@@ -90,6 +90,13 @@ public class PlayerController : MonoBehaviour
             GameController.instance.AdicionarPontos();
         }
 
+        if (other.CompareTag("power_up"))
+        {
+            // Adicionar Pontos
+            Destroy(other.gameObject);
+            GameController.instance.Power_Up();
+        }
+
         if (other.CompareTag("enemy"))
         {
             // Adicionar Pontos

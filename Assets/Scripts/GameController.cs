@@ -72,4 +72,9 @@ public class GameController : MonoBehaviour
             HealthText.text = "Vida: " + vida.ToString();
         }
     }
+
+    public void Power_Up(){
+        vida += 5;
+        HealthText.text = "Vida: " + vida.ToString();
+    }
 }

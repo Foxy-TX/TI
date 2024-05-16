@@ -12,6 +12,8 @@ TagManager:
   - Follow
   - Floor
   - up
+  - O mais Importante
+  - powe_up
   layers:
   - Default
   - TransparentFX
