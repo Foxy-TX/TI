@@ -6,17 +6,13 @@ using TMPro;
 
 public class GameController : MonoBehaviour
 {
-    public GameObject[] interativos;
-    public GameObject coin;
     private int _pontos = 0;
     private int vida = 10;
     public TMP_Text pontuacoText;
     public TMP_Text HealthText;
     public GameObject btn_tryAgain;
-    public GameObject btn_Win;
     public static GameController instance;
 
-    private Vector3 spawn = new Vector3(18, -3, -0);
     
     void Awake()
     {
@@ -30,30 +26,10 @@ public class GameController : MonoBehaviour
         }
     }
 
-    void Start()
-    {
-        InvokeRepeating(nameof(spawnCoins), 2f, 1f);
-    }
-
-
-    void spawnEnemies()
-    {
-        int index = Random.Range(0, interativos.Length);
-        GameObject selecionado = interativos[index];
-        Instantiate(selecionado, spawn, selecionado.transform.rotation);
-    }
-    void spawnCoins()
-    {
-        Instantiate(coin, spawn, coin.transform.rotation);
-    }
-
     public void AdicionarPontos()
     {
         _pontos ++;
         pontuacoText.text = "Pontos: " + _pontos.ToString();
-        if(_pontos == 10){
-            btn_Win.SetActive(true);
-        }
     }
 
     public void GameOver()
@@ -63,6 +39,11 @@ public class GameController : MonoBehaviour
         if(vida == 0){
         btn_tryAgain.SetActive(true);
     }
+    }
+
+    public void EnemyShield()
+    {
+        btn_tryAgain.SetActive(true);
     }
 
     public void CheatVida(){

@@ -71,7 +71,7 @@ public class PlayerController : MonoBehaviour
         {
             //Tomar Dano
             ac.audioSFX(danoClip);
-            GameController.instance.GameOver();
+            GameController.instance.EnemyShield();
         }
 
     if (other.CompareTag("Enemy_bullet"))
