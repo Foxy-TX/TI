@@ -6,6 +6,8 @@ public class EnemyController : MonoBehaviour
 {
     public GameObject bulletPrefab;
 
+    public GameObject powerUpPrefab;
+
     public Transform alvo;
 
     public Transform turret;
@@ -18,6 +20,7 @@ public class EnemyController : MonoBehaviour
 
     private bool _canshoot = false;
 
+    private float aleatorio;
 
 
 
@@ -25,7 +28,7 @@ public class EnemyController : MonoBehaviour
     {
         //Definir o alvo do enimigo
         alvo = GameObject.FindGameObjectWithTag("Player").transform;
-
+        aleatorio = Random.value;
     }
 
     // Update is called once per frame
@@ -60,6 +63,16 @@ public class EnemyController : MonoBehaviour
 
     }
 
+    public void PowerUpControl(Vector3 posicao, Quaternion rotacao)
+    {//Atirar quando o cooldown acabar
+        if (_canshoot)
+        {
+            GameObject clone = Instantiate(powerUpPrefab, posicao, rotacao);
+        }
+
+
+
+    }
     private void OnTriggerEnter(Collider other)
     {
         //Se destruir quando o player morrer
@@ -67,6 +80,10 @@ public class EnemyController : MonoBehaviour
         {
 
             Destroy(gameObject);
+            if (aleatorio >= 0.3f)
+            {
+               PowerUpControl(turret.position, turret.rotation);
+            }
 
         }
     }

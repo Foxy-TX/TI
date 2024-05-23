@@ -90,9 +90,9 @@ public class PlayerController : MonoBehaviour
             GameController.instance.AdicionarPontos();
         }
 
-        if (other.CompareTag("power_up"))
+        if (other.CompareTag("powe_up"))
         {
-            // Adicionar Pontos
+            // Power UP
             Destroy(other.gameObject);
             GameController.instance.Power_Up();
         }
