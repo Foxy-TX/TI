@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Abura : MonoBehaviour
 {
+    [SerializeField] private Animator _animator;
     public GameObject shield;
 
     public Transform turret;

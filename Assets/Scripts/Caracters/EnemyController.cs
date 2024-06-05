@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
+    [SerializeField] private Animator _animator;
+
     public GameObject bulletPrefab;
 
     public GameObject powerUpPrefab;
@@ -45,6 +47,7 @@ public class EnemyController : MonoBehaviour
 
         direction.Normalize();
 
+
         transform.Translate(direction * speed * Time.deltaTime, Space.World);
         //Atirar
         ShootControl(turret.position, turret.rotation);
@@ -54,6 +57,7 @@ public class EnemyController : MonoBehaviour
     {//Atirar quando o cooldown acabar
         if (_canshoot)
         {
+            _animator.SetTrigger("Combat");
             GameObject clone = Instantiate(bulletPrefab, posicao, rotacao);
             Bullet bulletScript = clone.GetComponent<Bullet>();
             _canshoot = false;
@@ -78,7 +82,7 @@ public class EnemyController : MonoBehaviour
         //Se destruir quando o player morrer
         if (other.CompareTag("Player"))
         {
-
+            _animator.SetTrigger("death");
             Destroy(gameObject);
             if (aleatorio >= 0.3f)
             {

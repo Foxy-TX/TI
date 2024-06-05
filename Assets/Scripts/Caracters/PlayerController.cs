@@ -9,12 +9,14 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Rigidbody _rb;
     [SerializeField] AudioClip danoClip;
     [SerializeField] Audio_Controler ac;
+    [SerializeField] private Animator _animator;
     private Vector2 startTouchPos;
     private bool isJumping = false;
     private float jumpForce = 300;
     public float speed = 2f;
     private bool change = false;
     private int bate_count = 0;
+    private float Mcount;
 
 
     public static PlayerController instance;
@@ -51,6 +53,7 @@ public class PlayerController : MonoBehaviour
             {
                 if (!isJumping && Mathf.Abs(touch.position.y - startTouchPos.y) > 100)
                 {
+                    _animator.SetTrigger("Jump");
                     isJumping = true;
                     _rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
 
@@ -71,15 +74,25 @@ public class PlayerController : MonoBehaviour
         {
             //Tomar Dano
             ac.audioSFX(danoClip);
+            _animator.SetTrigger("dano");
             GameController.instance.EnemyShield();
+            Mcount ++;
+            if (Mcount == 10){
+                _animator.SetTrigger("morte");
+            }
         }
 
     if (other.CompareTag("Enemy_bullet"))
         {
             //Tomar Dano
             ac.audioSFX(danoClip);
+            _animator.SetTrigger("dano");
             Destroy(other.gameObject);
             GameController.instance.GameOver();
+            Mcount ++;
+            if (Mcount == 10){
+                _animator.SetTrigger("morte");
+            }
         }
         
 
@@ -102,6 +115,7 @@ public class PlayerController : MonoBehaviour
             // Adicionar Pontos
             Destroy(other.gameObject);
             GameController.instance.AdicionarPontos();
+
         }
 
         if (other.CompareTag("Wall"))

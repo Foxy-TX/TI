@@ -3,9 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class GameController : MonoBehaviour
 {
+    
+    [SerializeField] AudioClip MorteClip;
+    [SerializeField] AudioClip CoinClip;
+    [SerializeField] Audio_Controler ac;
     private int _pontos = 0;
     private int vida = 10;
     public TMP_Text pontuacoText;
@@ -28,6 +34,7 @@ public class GameController : MonoBehaviour
 
     public void AdicionarPontos()
     {
+        ac.audioSFX(CoinClip);
         _pontos ++;
         pontuacoText.text = "Pontos: " + _pontos.ToString();
     }
@@ -37,6 +44,7 @@ public class GameController : MonoBehaviour
         vida --;
         HealthText.text = "Vida: " + vida.ToString();
         if(vida == 0){
+            ac.audioSFX(MorteClip);
         btn_tryAgain.SetActive(true);
     }
     }
