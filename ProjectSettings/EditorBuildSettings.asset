@@ -24,5 +24,7 @@ EditorBuildSettings:
     path: "Assets/Scenes/Configura\xE7\xF5es.unity"
     guid: 76f1920b744a17a4fa11d1038683f7c5
   m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 96c7414e1ac520a468c2f41c9fddad38,
+      type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000,
       guid: ed2ac04cc0427474a9eddee52b256712, type: 2}
