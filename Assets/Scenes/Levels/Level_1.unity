@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1570,6 +1570,76 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1646264159337825436, guid: 1d606a6e522da684c8097d3b465b0df5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 1646264159337825436, guid: 1d606a6e522da684c8097d3b465b0df5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1646264159337825436, guid: 1d606a6e522da684c8097d3b465b0df5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 2905650681336549650, guid: 1d606a6e522da684c8097d3b465b0df5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2905650681336549650, guid: 1d606a6e522da684c8097d3b465b0df5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 2905650681336549650, guid: 1d606a6e522da684c8097d3b465b0df5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 2905650681336549650, guid: 1d606a6e522da684c8097d3b465b0df5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.020828389
+      objectReference: {fileID: 0}
+    - target: {fileID: 2905650681336549650, guid: 1d606a6e522da684c8097d3b465b0df5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9997831
+      objectReference: {fileID: 0}
+    - target: {fileID: 2905650681336549650, guid: 1d606a6e522da684c8097d3b465b0df5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 177.613
+      objectReference: {fileID: 0}
+    - target: {fileID: 4638406417613364566, guid: 1d606a6e522da684c8097d3b465b0df5,
+        type: 3}
+      propertyPath: m_Name
+      value: Asashi
+      objectReference: {fileID: 0}
+    - target: {fileID: 6065648171789964430, guid: 1d606a6e522da684c8097d3b465b0df5,
+        type: 3}
+      propertyPath: ac
+      value: 
+      objectReference: {fileID: 708016500}
+    - target: {fileID: 6065648171789964430, guid: 1d606a6e522da684c8097d3b465b0df5,
+        type: 3}
+      propertyPath: speed
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6065648171789964430, guid: 1d606a6e522da684c8097d3b465b0df5,
+        type: 3}
+      propertyPath: _animator
+      value: 
+      objectReference: {fileID: 1601267210}
+    - target: {fileID: 6065648171789964430, guid: 1d606a6e522da684c8097d3b465b0df5,
+        type: 3}
+      propertyPath: jumpForce
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2169304709878244264, guid: aa832f05ba2417a458d86521852d55f8,
         type: 3}
       propertyPath: m_RootOrder
@@ -1655,66 +1725,6 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1646264159337825436, guid: 1d606a6e522da684c8097d3b465b0df5,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -12.49
-      objectReference: {fileID: 0}
-    - target: {fileID: 1646264159337825436, guid: 1d606a6e522da684c8097d3b465b0df5,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 1646264159337825436, guid: 1d606a6e522da684c8097d3b465b0df5,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 10.08
-      objectReference: {fileID: 0}
-    - target: {fileID: 2905650681336549650, guid: 1d606a6e522da684c8097d3b465b0df5,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -9.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 2905650681336549650, guid: 1d606a6e522da684c8097d3b465b0df5,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.69
-      objectReference: {fileID: 0}
-    - target: {fileID: 2905650681336549650, guid: 1d606a6e522da684c8097d3b465b0df5,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.61
-      objectReference: {fileID: 0}
-    - target: {fileID: 2905650681336549650, guid: 1d606a6e522da684c8097d3b465b0df5,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.020828389
-      objectReference: {fileID: 0}
-    - target: {fileID: 2905650681336549650, guid: 1d606a6e522da684c8097d3b465b0df5,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.9997831
-      objectReference: {fileID: 0}
-    - target: {fileID: 2905650681336549650, guid: 1d606a6e522da684c8097d3b465b0df5,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 177.613
-      objectReference: {fileID: 0}
-    - target: {fileID: 4638406417613364566, guid: 1d606a6e522da684c8097d3b465b0df5,
-        type: 3}
-      propertyPath: m_Name
-      value: Asashi
-      objectReference: {fileID: 0}
-    - target: {fileID: 6065648171789964430, guid: 1d606a6e522da684c8097d3b465b0df5,
-        type: 3}
-      propertyPath: ac
-      value: 
-      objectReference: {fileID: 708016500}
-    - target: {fileID: 6065648171789964430, guid: 1d606a6e522da684c8097d3b465b0df5,
-        type: 3}
-      propertyPath: _animator
-      value: 
-      objectReference: {fileID: 1601267210}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

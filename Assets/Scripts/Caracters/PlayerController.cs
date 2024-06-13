@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Animator _animator;
     private Vector2 startTouchPos;
     private bool isJumping = false;
-    private float jumpForce = 300;
+    [SerializeField]private float jumpForce = 300;
     public float speed = 2f;
     private bool change = false;
     private int bate_count = 0;
@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
             }
             else if (touch.phase == TouchPhase.Moved)
             {
-                if (!isJumping && Mathf.Abs(touch.position.y - startTouchPos.y) > 100)
+                if (isJumping == false && Mathf.Abs(touch.position.y - startTouchPos.y) > 100)
                 {
                     _animator.SetTrigger("Jump");
                     isJumping = true;
