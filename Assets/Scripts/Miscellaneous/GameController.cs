@@ -12,7 +12,7 @@ public class GameController : MonoBehaviour
     [SerializeField] AudioClip MorteClip;
     [SerializeField] AudioClip CoinClip;
     [SerializeField] Audio_Controler ac;
-    private int _pontos = 0;
+    public int _pontos = 0;
     private int vida = 10;
     public TMP_Text pontuacoText;
     public TMP_Text HealthText;
