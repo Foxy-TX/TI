@@ -44,8 +44,11 @@ public class EnemyController : MonoBehaviour
         }
         //Fazer o enimigo perseguir o player
         Vector3 direction = alvo.position - transform.position;
+        direction.y = 0f;
 
         direction.Normalize();
+
+       
 
 
         transform.Translate(direction * speed * Time.deltaTime, Space.World);
