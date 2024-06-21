@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  _animator: {fileID: 0}
+  _animator: {fileID: 1619569452059206378}
 --- !u!1 &5931089060348935602
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,11 +207,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Abumi_Guchi_Prototipo (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 19fc07b4fa9b0f44ca276cfd5ad4920a,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 33cfb414dd80c22458fa6307c59a390f, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19fc07b4fa9b0f44ca276cfd5ad4920a, type: 3}
+--- !u!95 &1619569452059206378 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 19fc07b4fa9b0f44ca276cfd5ad4920a,
+    type: 3}
+  m_PrefabInstance: {fileID: 5121516898878529403}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4655016678381189264 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 19fc07b4fa9b0f44ca276cfd5ad4920a,

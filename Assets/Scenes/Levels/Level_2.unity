@@ -407,26 +407,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4638406417613364566, guid: 1d606a6e522da684c8097d3b465b0df5,
-        type: 3}
-      propertyPath: m_Name
-      value: Asashi
-      objectReference: {fileID: 0}
-    - target: {fileID: 2905650681336549650, guid: 1d606a6e522da684c8097d3b465b0df5,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 80.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2905650681336549650, guid: 1d606a6e522da684c8097d3b465b0df5,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 2905650681336549650, guid: 1d606a6e522da684c8097d3b465b0df5,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1819980379788281237, guid: aa832f05ba2417a458d86521852d55f8,
         type: 3}
       propertyPath: m_Icon
@@ -547,6 +527,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4638406417613364566, guid: 1d606a6e522da684c8097d3b465b0df5,
+        type: 3}
+      propertyPath: m_Name
+      value: Asashi
+      objectReference: {fileID: 0}
+    - target: {fileID: 7042673290301059636, guid: 1d606a6e522da684c8097d3b465b0df5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7042673290301059636, guid: 1d606a6e522da684c8097d3b465b0df5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8993859334813162320, guid: 1d606a6e522da684c8097d3b465b0df5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 76.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8993859334813162320, guid: 1d606a6e522da684c8097d3b465b0df5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3041,6 +3046,7 @@ MonoBehaviour:
   MorteClip: {fileID: 8300000, guid: c1bc40e9075534f9883915554a92020f, type: 3}
   CoinClip: {fileID: 8300000, guid: 28ea8f2e445024d93884e4bc4ba1e834, type: 3}
   ac: {fileID: 738072690}
+  _pontos: 0
   pontuacoText: {fileID: 111475399}
   HealthText: {fileID: 600763239}
   btn_tryAgain: {fileID: 151257496}
