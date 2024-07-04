@@ -1038,12 +1038,13 @@ MonoBehaviour:
   _animator: {fileID: 7739120638604416503}
   bulletPrefab: {fileID: 326656465094748369, guid: af7695ce9fd362145983e5daac110dd4,
     type: 3}
-  powerUpPrefab: {fileID: 243434551472108949, guid: b6ce04d72936e7743afb870d820375ac,
+  powerUpPrefab: {fileID: 8021326245494754142, guid: 28945bc66e1fd3a4da2676fc1e566845,
     type: 3}
   alvo: {fileID: 2169304709878244264, guid: aa832f05ba2417a458d86521852d55f8, type: 3}
   turret: {fileID: 4727475897643356096}
   shootCooldown: 1
   speed: -1
+  distancia: 5
 --- !u!54 &6508083992006647320
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1090,8 +1091,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 2, z: 2}
-  m_Center: {x: 0.010612056, y: 0.041430235, z: -0.0036298484}
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &3074519055852604815
 Animator:
   serializedVersion: 5
@@ -1197,7 +1198,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -3846018093981099296, guid: 97c7163a625de5f47bba1bb1753f03ab, type: 3}
+  - {fileID: 2100000, guid: 254d2f51d84a3554b894a794f8d9c51b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -20,12 +20,16 @@ public class EnemyController : MonoBehaviour
 
     public float speed = 5;
 
+    public float distancia = 4.0f;
+
     private bool _canshoot = false;
 
     private float aleatorio;
 
+    
 
 
+   
     void Start()
     {
         //Definir o alvo do enimigo
@@ -35,21 +39,26 @@ public class EnemyController : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {//Colldown do tiro
+    {
         _timer += Time.deltaTime;
-
-        if (_timer >= shootCooldown)
-        {
-            _canshoot = true;
-        }
         //Fazer o enimigo perseguir o player
         Vector3 direction = alvo.position - transform.position;
         direction.y = 0f;
 
         direction.Normalize();
 
-       
+        if (_timer >= shootCooldown)
+        {
 
+            if (Vector3.Distance(alvo.position, transform.position) < distancia)
+            {
+                _canshoot = true;
+            }
+            else
+            {
+                _canshoot = false;
+            }
+        }
 
         transform.Translate(direction * speed * Time.deltaTime, Space.World);
         //Atirar
